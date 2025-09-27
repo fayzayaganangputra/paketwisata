@@ -35,21 +35,21 @@ const Home = () => {
       name: 'Toyota Avanza',
       capacity: '6 orang',
       price: 'Rp 550.000',
-      image: 'public/images/armada1.png',
+      image: 'images/armada1.png',
       specs: ['BBM Included', 'Driver Profesional', 'AC & Audio', 'Pemakaian 12 Jam/Day']
     },
     {
       name: 'Toyota Innova',
       capacity: '7 orang',
       price: 'Rp 750.000',
-      image: 'public/images/reborn.png',
+      image: 'images/reborn.png',
       specs: ['BBM Included', 'Driver Profesional', 'AC & Audio', 'Pemakaian 12 Jam/Day']
     },
     {
       name: 'Hiace',
       capacity: '15 orang',
       price: 'Rp 1.200.000',
-      image: 'public/images/armada2.png',
+      image: 'images/armada2.png',
       specs: ['BBM Included', 'Driver Profesional', 'AC & Audio', 'Pemakaian 12 Jam/Day']
     }
   ];
