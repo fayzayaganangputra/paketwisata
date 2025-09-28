@@ -34,7 +34,7 @@ const CarRental = () => {
       name: 'Toyota Alphard',
       capacity: '7 orang',
       price: 'Rp 2.000.000',
-      image: '/images/alphard.png',
+      image: '/paketwisata/images/alphard.png',
       features: ['AC', 'Premium Audio', 'Automatic'],
       description: 'Kendaraan mewah dengan fasilitas premium untuk pengalaman perjalanan yang eksklusif.',
       specs: ['BBM Included', 'Driver Profesional', 'Premium Audio System', 'Pemakaian 12 Jam/Day', 'Asuransi Perjalanan']
