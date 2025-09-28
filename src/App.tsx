@@ -2,6 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import ScrollToTop from './components/ScrollToTop'; // ⬅️ import
+
 import Home from './pages/Home';
 import TourPackages from './pages/TourPackages';
 import DestinationDetail from './pages/DestinationDetail';
@@ -15,7 +17,8 @@ import Testimonials from './pages/Testimonials';
 
 function App() {
   return (
-    <Router basename="/paketwisata"> {/* 👈 tambahkan ini */}
+    <Router basename="/paketwisata">
+      <ScrollToTop /> {/* ⬅️ tambahkan di sini */}
       <div className="min-h-screen bg-white">
         <Navbar />
         <main>
