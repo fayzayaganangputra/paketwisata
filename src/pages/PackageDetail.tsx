@@ -75,11 +75,12 @@ const PackageDetail = () => {
         'Transport AC full',
         'Driver profesional',
         'Bahan bakar',
+        'Tiket masuk wisata',
         'Parkir dan tol',
         'Asuransi perjalanan'
       ],
       excludes: [
-        'Tiket masuk wisata',
+        
         'Makan dan minum',
         'Akomodasi hotel',
         'Pengeluaran pribadi'
@@ -224,7 +225,7 @@ const PackageDetail = () => {
                 </a>
                 
                 <div className="text-center text-sm text-gray-500">
-                  <p>💬 Respon cepat dalam 5 menit</p>
+                  <p>💬 Respon cepat</p>
                   <p>✅ Gratis konsultasi itinerary</p>
                 </div>
               </div>
@@ -235,7 +236,7 @@ const PackageDetail = () => {
                   <li>• Minimal booking 2 orang</li>
                   <li>• Harga dapat berubah saat high season</li>
                   <li>• Gratis revisi itinerary 1x</li>
-                  <li>• Booking min. H-3 sebelum keberangkatan</li>
+                  <li>• Booking min. H-1 sebelum keberangkatan</li>
                 </ul>
               </div>
             </div>
