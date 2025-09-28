@@ -15,7 +15,7 @@ import Testimonials from './pages/Testimonials';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/paketwisata"> {/* 👈 tambahkan ini */}
       <div className="min-h-screen bg-white">
         <Navbar />
         <main>

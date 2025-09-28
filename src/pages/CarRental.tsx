@@ -7,7 +7,7 @@ const CarRental = () => {
       name: 'Toyota Avanza',
       capacity: '6 orang',
       price: 'Rp 550.000',
-      image: 'images/armada1.png',
+      image: '/images/armada1.png',
       features: ['AC', 'Audio System', 'Manual'],
       description: 'Mobil keluarga yang nyaman dan hemat bahan bakar, cocok untuk perjalanan dalam kota.',
       specs: ['BBM Included', 'Driver Profesional', 'AC & Audio System', 'Pemakaian 12 Jam/Day', 'Asuransi Perjalanan']
@@ -16,7 +16,7 @@ const CarRental = () => {
       name: 'Toyota Innova',
       capacity: '7 orang',
       price: 'Rp 750.000',
-      image: 'images/reborn.png',
+      image: '/images/reborn.png',
       features: ['AC', 'Audio System', 'Manual'],
       description: 'Kendaraan premium dengan ruang lebih luas, ideal untuk perjalanan jarak jauh.',
       specs: ['BBM Included', 'Driver Profesional', 'AC & Audio System', 'Pemakaian 12 Jam/Day', 'Asuransi Perjalanan']
@@ -25,7 +25,7 @@ const CarRental = () => {
       name: 'Hiace',
       capacity: '15 orang',
       price: 'Rp 1.200.000',
-      image: 'images/armada2.png',
+      image: '/images/armada2.png',
       features: ['AC', 'Audio System', 'Manual'],
       description: 'Bus mini untuk group besar dengan kenyamanan maksimal dan bagasi yang luas.',
       specs: ['BBM Included', 'Driver Profesional', 'AC & Audio System', 'Pemakaian 12 Jam/Day', 'Asuransi Perjalanan']
@@ -34,7 +34,7 @@ const CarRental = () => {
       name: 'Toyota Alphard',
       capacity: '7 orang',
       price: 'Rp 2.000.000',
-      image: 'images/alphard.png',
+      image: '/images/alphard.png',
       features: ['AC', 'Premium Audio', 'Automatic'],
       description: 'Kendaraan mewah dengan fasilitas premium untuk pengalaman perjalanan yang eksklusif.',
       specs: ['BBM Included', 'Driver Profesional', 'Premium Audio System', 'Pemakaian 12 Jam/Day', 'Asuransi Perjalanan']
