@@ -223,8 +223,8 @@ const PackageDetail = () => {
   // PAKET MALANG + BROMO 3 HARI
   // ===========================
   'malang-bromo-3-day': {
-    name: 'Paket 3 Day Malang Bromo',
-    destination: 'Malang & Bromo',
+    name: 'Paket 3 Day Malang',
+    destination: 'Malang',
     duration: '3 Hari 2 Malam',
     image:
       'https://images.pexels.com/photos/2777735/pexels-photo-2777735.jpeg?auto=compress&cs=tinysrgb&w=1200',
@@ -299,7 +299,7 @@ const PackageDetail = () => {
     ],
     excludes: ['Makan & Minum', 'Hotel', 'Pengeluaran pribadi'],
   },
-  
+
   // --- Paket Bali ---
   'bali-3-day': {
     name: 'Paket 3 Day Bali',
