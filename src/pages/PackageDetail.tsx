@@ -6,6 +6,30 @@ const PackageDetail = () => {
   const { destination, package: packageId } = useParams();
 
   const packageData: Record<string, any> = {
+    'jogja-1-day': {
+    name: 'Paket 1 Day Jogja',
+    destination: 'Yogyakarta',
+    duration: '1 Hari',
+    image: '/images/jogja-1-day.jpg', // ganti sesuai lokasi gambarmu
+    description: 'Wisata singkat namun berkesan untuk merasakan pesona Yogyakarta.',
+    pricing: [
+      { range: '2-5 pax', price: 'Rp 400.000', pricePerPax: true },
+      { range: '6-10 pax', price: 'Rp 350.000', pricePerPax: true }
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Hari Pertama',
+        activities: [
+          { time: '08.00', location: 'Malioboro Street', description: 'Belanja dan wisata kota' },
+          { time: '11.00', location: 'Kraton Yogyakarta', description: 'Sejarah budaya Jogja' },
+          { time: '14.00', location: 'Taman Sari', description: 'Istana air peninggalan Sultan' }
+        ]
+      }
+    ],
+    includes: ['Transport AC', 'Driver', 'BBM', 'Tiket wisata'],
+    excludes: ['Makan & minum', 'Hotel']
+  },
     'jogja-2-day': {
       name: 'Paket 2 Day Jogja',
       destination: 'Yogyakarta',
@@ -85,7 +109,335 @@ const PackageDetail = () => {
         'Akomodasi hotel',
         'Pengeluaran pribadi'
       ]
-    }
+    },
+    'jogja-3-day': {
+    name: 'Paket 3 Day Jogja',
+    destination: 'Yogyakarta',
+    duration: '3 Hari 2 Malam',
+    image: '/images/jogja-3-day.jpg',
+    description: 'Paket lengkap untuk eksplorasi mendalam Yogyakarta dan sekitarnya.',
+    pricing: [
+      { range: '2-5 pax', price: 'Rp 1.200.000', pricePerPax: true },
+      { range: '6-10 pax', price: 'Rp 1.100.000', pricePerPax: true }
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Hari Pertama',
+        activities: [
+          { time: '08.00', location: 'Borobudur', description: 'Wisata sejarah dan budaya dunia' },
+          { time: '13.00', location: 'Malioboro', description: 'Belanja dan kuliner khas Jogja' }
+        ]
+      },
+      {
+        day: 2,
+        title: 'Hari Kedua',
+        activities: [
+          { time: '09.00', location: 'Prambanan', description: 'Candi Hindu terbesar di Indonesia' },
+          { time: '14.00', location: 'Hutan Pinus', description: 'Wisata alam yang asri dan sejuk' }
+        ]
+      },
+      {
+        day: 3,
+        title: 'Hari Ketiga',
+        activities: [
+          { time: '08.00', location: 'Tebing Breksi', description: 'Spot foto alam dan sejarah geologi' },
+          { time: '13.00', location: 'Pantai Parangtritis', description: 'Pantai ikonik di selatan Jogja' }
+        ]
+      }
+    ],
+    includes: ['Transport AC', 'Driver', 'BBM', 'Tiket wisata'],
+    excludes: ['Makan & minum', 'Hotel']
+  },
+
+    // ===========================
+  // PAKET MALANG + BROMO 2 HARI
+  // ===========================
+     'malang-2-day': {
+    name: 'Paket 2 Day Malang',
+    destination: 'Malang',
+    duration: '2 Hari 1 Malam',
+    image:
+      'https://images.pexels.com/photos/2611690/pexels-photo-2611690.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    description:
+      'Wisata alam dan wahana edukatif di Malang yang cocok untuk keluarga maupun rombongan.',
+    pricing: [
+      { range: '2-5 pax', price: 'Rp 600.000', pricePerPax: true },
+      { range: '6-10 pax', price: 'Rp 550.000', pricePerPax: true },
+      { range: '10-20 pax', price: 'Rp 500.000', pricePerPax: true },
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Hari Pertama',
+        activities: [
+          {
+            time: '08.00',
+            location: 'Jatim Park 2',
+            description: 'Wisata edukasi keluarga dan satwa di Batu.',
+          },
+          {
+            time: '13.00',
+            location: 'Coban Rondo',
+            description: 'Air terjun alami di pegunungan Malang.',
+          },
+          {
+            time: '16.00',
+            location: 'Kota Malang Heritage',
+            description: 'Jelajah kota Malang dan kuliner khas.',
+          },
+        ],
+      },
+      {
+        day: 2,
+        title: 'Hari Kedua',
+        activities: [
+          {
+            time: '08.00',
+            location: 'Museum Angkut',
+            description: 'Museum transportasi unik di Kota Batu.',
+          },
+          {
+            time: '12.00',
+            location: 'Belanja Oleh-oleh',
+            description: 'Pusat oleh-oleh khas Malang.',
+          },
+          {
+            time: '15.00',
+            location: 'Pulang',
+            description: 'Kembali ke meeting point.',
+          },
+        ],
+      },
+    ],
+    includes: [
+      'Transport AC full',
+      'Driver profesional',
+      'BBM',
+      'Tiket masuk wisata',
+    ],
+    excludes: ['Makan & Minum', 'Hotel', 'Pengeluaran pribadi'],
+  },
+
+  // ===========================
+  // PAKET MALANG + BROMO 3 HARI
+  // ===========================
+  'malang-bromo-3-day': {
+    name: 'Paket 3 Day Malang Bromo',
+    destination: 'Malang & Bromo',
+    duration: '3 Hari 2 Malam',
+    image:
+      'https://images.pexels.com/photos/2777735/pexels-photo-2777735.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    description:
+      'Kombinasi wisata kota Malang, Batu, dan sunrise Gunung Bromo.',
+    pricing: [
+      { range: '2-5 pax', price: 'Rp 1.000.000', pricePerPax: true },
+      { range: '6-10 pax', price: 'Rp 950.000', pricePerPax: true },
+      { range: '10-20 pax', price: 'Rp 900.000', pricePerPax: true },
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Hari Pertama',
+        activities: [
+          {
+            time: '08.00',
+            location: 'Museum Angkut',
+            description: 'Jelajah museum transportasi.',
+          },
+          {
+            time: '13.00',
+            location: 'Alun-Alun Malang',
+            description: 'Wisata kuliner dan foto-foto di alun-alun.',
+          },
+        ],
+      },
+      {
+        day: 2,
+        title: 'Hari Kedua',
+        activities: [
+          {
+            time: '02.00',
+            location: 'Gunung Bromo',
+            description: 'Sunrise view point, Lautan Pasir, Bukit Teletubbies.',
+          },
+          {
+            time: '10.00',
+            location: 'Kembali ke Malang',
+            description: 'Check-in hotel & istirahat.',
+          },
+        ],
+      },
+      {
+        day: 3,
+        title: 'Hari Ketiga',
+        activities: [
+          {
+            time: '08.00',
+            location: 'Selecta Batu',
+            description: 'Taman bunga & kolam renang di Batu.',
+          },
+          {
+            time: '12.00',
+            location: 'Belanja Oleh-oleh',
+            description: 'Shopping di pusat oleh-oleh khas Malang.',
+          },
+          {
+            time: '15.00',
+            location: 'Pulang',
+            description: 'Perjalanan pulang.',
+          },
+        ],
+      },
+    ],
+    includes: [
+      'Transport AC full',
+      'Driver profesional',
+      'BBM',
+      'Jeep Bromo',
+      'Tiket wisata',
+    ],
+    excludes: ['Makan & Minum', 'Hotel', 'Pengeluaran pribadi'],
+  },
+  
+  // --- Paket Bali ---
+  'bali-3-day': {
+    name: 'Paket 3 Day Bali',
+    destination: 'Bali',
+    duration: '3 Hari 2 Malam',
+    image: '/images/bali-3-day.jpg',
+    description: 'Wisata essential Bali dengan destinasi ikonik.',
+    pricing: [
+      { range: '2-5 pax', price: 'Rp 1.500.000', pricePerPax: true },
+      { range: '6-10 pax', price: 'Rp 1.400.000', pricePerPax: true }
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Hari Pertama',
+        activities: [
+          { time: '08.00', location: 'Tanah Lot', description: 'Ikon wisata pura di atas laut' },
+          { time: '13.00', location: 'Ubud', description: 'Eksplorasi seni dan budaya Bali' }
+        ]
+      },
+      {
+        day: 2,
+        title: 'Hari Kedua',
+        activities: [
+          { time: '09.00', location: 'Pantai Kuta', description: 'Wisata pantai populer dengan sunset indah' },
+          { time: '15.00', location: 'Tegalalang Rice Terrace', description: 'Pemandangan sawah terasering khas Bali' }
+        ]
+      },
+      {
+        day: 3,
+        title: 'Hari Ketiga',
+        activities: [
+          { time: '09.00', location: 'Belanja oleh-oleh', description: 'Pusat oleh-oleh khas Bali' },
+          { time: '13.00', location: 'Pulang', description: 'Kembali dengan kenangan indah' }
+        ]
+      }
+    ],
+    includes: ['Transport AC', 'Driver', 'BBM', 'Tiket wisata'],
+    excludes: ['Makan & minum', 'Hotel']
+  },
+
+  'bali-4-day': {
+    name: 'Paket 4 Day Bali',
+    destination: 'Bali',
+    duration: '4 Hari 3 Malam',
+    image: '/images/bali-4-day.jpg',
+    description: 'Eksplorasi lengkap Bali Selatan dan Tengah.',
+    pricing: [
+      { range: '2-5 pax', price: 'Rp 2.000.000', pricePerPax: true },
+      { range: '6-10 pax', price: 'Rp 1.900.000', pricePerPax: true }
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Hari Pertama',
+        activities: [
+          { time: '08.00', location: 'Pura Besakih', description: 'Pura terbesar dan termegah di Bali' },
+          { time: '14.00', location: 'Kintamani', description: 'Pemandangan Gunung Batur dan Danau Batur' }
+        ]
+      },
+      {
+        day: 2,
+        title: 'Hari Kedua',
+        activities: [
+          { time: '09.00', location: 'Pantai Sanur', description: 'Pantai tenang dengan sunrise indah' },
+          { time: '13.00', location: 'Monkey Forest Ubud', description: 'Hutan dengan kera jinak & pura kuno' }
+        ]
+      },
+      {
+        day: 3,
+        title: 'Hari Ketiga',
+        activities: [
+          { time: '09.00', location: 'Ubud Traditional Market', description: 'Pasar seni & kerajinan tangan Bali' },
+          { time: '14.00', location: 'Goa Gajah', description: 'Peninggalan arkeologi Hindu-Buddha' }
+        ]
+      },
+      {
+        day: 4,
+        title: 'Hari Keempat',
+        activities: [
+          { time: '10.00', location: 'Pulang', description: 'Kembali dengan pengalaman berkesan' }
+        ]
+      }
+    ],
+    includes: ['Transport AC', 'Driver', 'BBM', 'Tiket wisata'],
+    excludes: ['Makan & minum', 'Hotel']
+  },
+
+  'bali-5-day': {
+    name: 'Paket 5 Day Bali',
+    destination: 'Bali',
+    duration: '5 Hari 4 Malam',
+    image: '/images/bali-5-day.jpg',
+    description: 'Petualangan lengkap dari pantai hingga gunung di Bali.',
+    pricing: [
+      { range: '2-5 pax', price: 'Rp 2.800.000', pricePerPax: true },
+      { range: '6-10 pax', price: 'Rp 2.600.000', pricePerPax: true }
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Hari Pertama',
+        activities: [
+          { time: '08.00', location: 'Uluwatu', description: 'Pura tepi tebing dengan sunset indah' }
+        ]
+      },
+      {
+        day: 2,
+        title: 'Hari Kedua',
+        activities: [
+          { time: '09.00', location: 'Sekumpul Waterfall', description: 'Air terjun paling indah di Bali Utara' }
+        ]
+      },
+      {
+        day: 3,
+        title: 'Hari Ketiga',
+        activities: [
+          { time: '09.00', location: 'Jatiluwih', description: 'Warisan dunia UNESCO berupa sawah terasering' }
+        ]
+      },
+      {
+        day: 4,
+        title: 'Hari Keempat',
+        activities: [
+          { time: '09.00', location: 'Bedugul', description: 'Pura Ulun Danu Bratan di tepi danau' }
+        ]
+      },
+      {
+        day: 5,
+        title: 'Hari Kelima',
+        activities: [
+          { time: '10.00', location: 'Pulang', description: 'Kembali dengan pengalaman lengkap menjelajah Bali' }
+        ]
+      }
+    ],
+    includes: ['Transport AC', 'Driver', 'BBM', 'Tiket wisata'],
+    excludes: ['Makan & minum', 'Hotel']
+  },
   };
 
   const currentPackage = packageData[`${destination}-${packageId}`] || packageData['jogja-2-day'];
