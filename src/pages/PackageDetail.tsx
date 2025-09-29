@@ -222,7 +222,7 @@ const PackageDetail = () => {
   // ===========================
   // PAKET MALANG + BROMO 3 HARI
   // ===========================
-  'malang-bromo-3-day': {
+  'malang-3-day': {
     name: 'Paket 3 Day Malang Bromo',
     destination: 'Malang',
     duration: '3 Hari 2 Malam',
