@@ -7,7 +7,7 @@ const CarRental = () => {
       name: 'Toyota Avanza',
       capacity: '6 orang',
       price: 'Rp 550.000',
-      image: '/paketwisata/images/armada1.png',
+      image: 'https://images.pexels.com/photos/3786215/pexels-photo-3786215.jpeg?auto=compress&cs=tinysrgb&w=800',
       features: ['AC', 'Audio System', 'Manual'],
       description: 'Mobil keluarga yang nyaman dan hemat bahan bakar, cocok untuk perjalanan dalam kota.',
       specs: ['BBM Included', 'Driver Profesional', 'AC & Audio System', 'Pemakaian 12 Jam/Day', 'Asuransi Perjalanan']
@@ -16,7 +16,7 @@ const CarRental = () => {
       name: 'Toyota Innova',
       capacity: '7 orang',
       price: 'Rp 750.000',
-      image: '/paketwisata/images/reborn.png',
+      image: 'https://images.pexels.com/photos/3182773/pexels-photo-3182773.jpeg?auto=compress&cs=tinysrgb&w=800',
       features: ['AC', 'Audio System', 'Manual'],
       description: 'Kendaraan premium dengan ruang lebih luas, ideal untuk perjalanan jarak jauh.',
       specs: ['BBM Included', 'Driver Profesional', 'AC & Audio System', 'Pemakaian 12 Jam/Day', 'Asuransi Perjalanan']
@@ -25,7 +25,7 @@ const CarRental = () => {
       name: 'Hiace',
       capacity: '15 orang',
       price: 'Rp 1.200.000',
-      image: '/paketwisata/images/armada2.png',
+      image: 'https://images.pexels.com/photos/2102587/pexels-photo-2102587.jpeg?auto=compress&cs=tinysrgb&w=800',
       features: ['AC', 'Audio System', 'Manual'],
       description: 'Bus mini untuk group besar dengan kenyamanan maksimal dan bagasi yang luas.',
       specs: ['BBM Included', 'Driver Profesional', 'AC & Audio System', 'Pemakaian 12 Jam/Day', 'Asuransi Perjalanan']
@@ -34,7 +34,7 @@ const CarRental = () => {
       name: 'Toyota Alphard',
       capacity: '7 orang',
       price: 'Rp 2.000.000',
-      image: '/paketwisata/images/alphard.png',
+      image: 'https://images.pexels.com/photos/3729464/pexels-photo-3729464.jpeg?auto=compress&cs=tinysrgb&w=800',
       features: ['AC', 'Premium Audio', 'Automatic'],
       description: 'Kendaraan mewah dengan fasilitas premium untuk pengalaman perjalanan yang eksklusif.',
       specs: ['BBM Included', 'Driver Profesional', 'Premium Audio System', 'Pemakaian 12 Jam/Day', 'Asuransi Perjalanan']
@@ -100,12 +100,10 @@ const CarRental = () => {
             >
               <div className="relative">
                 <img
-                src={car.image}
-                alt={car.name}
-                className="w-full object-cover group-hover:scale-105 transition-transform duration-300 rounded-xl"
-              />
-
-
+                  src={car.image}
+                  alt={car.name}
+                  className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                />
                 <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full">
                   <div className="flex items-center space-x-1 text-amber-600">
                     <Star className="w-4 h-4 fill-current" />

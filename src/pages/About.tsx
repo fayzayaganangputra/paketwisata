@@ -65,7 +65,7 @@ const About = () => {
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white max-w-4xl mx-auto px-4">
             <h1 className="text-4xl md:text-5xl font-bold mb-4 animate-fade-in">
-              Tentang Rentalku Yogyakarta
+              Tentang Laju Tuju Yogyakarta
             </h1>
             <p className="text-lg md:text-xl animate-fade-in">
               Mitra terpercaya untuk petualangan wisata dan transportasi berkualitas di Indonesia
@@ -101,7 +101,7 @@ const About = () => {
               </h2>
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  Rentalku Yogyakarta didirikan pada tahun 2019 dengan visi menjadi penyedia layanan 
+                  Laju Tuju Yogyakarta didirikan pada tahun 2019 dengan visi menjadi penyedia layanan 
                   wisata dan transportasi terdepan di Indonesia. Berawal dari kecintaan terhadap keindahan 
                   alam dan budaya Indonesia, kami berkomitmen untuk memberikan pengalaman wisata yang 
                   tak terlupakan bagi setiap wisatawan.

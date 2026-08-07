@@ -13,10 +13,10 @@ const Footer = () => {
               <div className="w-8 h-8 bg-gradient-to-r from-amber-400 to-yellow-500 rounded-full flex items-center justify-center">
                 <MapPin className="w-5 h-5 text-white" />
               </div>
-              <span className="text-xl font-bold">Rentalku Yogyakarta</span>
+              <span className="text-xl font-bold">Laju Tuju Yogyakarta</span>
             </div>
             <p className="text-gray-300 mb-4 max-w-md">
-              Solusi terpercaya untuk paket wisata dan sewa mobil di Yogyakarta.
+              Solusi terpercaya untuk paket wisata dan sewa mobil di Yogyakarta. 
               Liburan mudah, hemat, dan berkesan bersama kami.
             </p>
             <div className="flex space-x-4">
@@ -87,7 +87,7 @@ const Footer = () => {
               </p>
               <p className="flex items-center space-x-2">
                 <Mail className="w-4 h-4" />
-                <span>info@rentalkuuyogya.com</span>
+                <span>info@lajutujuyogya.com</span>
               </p>
               <p className="flex items-center space-x-2">
                 <MapPin className="w-4 h-4" />
@@ -98,7 +98,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; 2025 Rentalku Yogyakarta. All rights reserved.</p>
+          <p>&copy; 2025 Laju Tuju Yogyakarta. All rights reserved.</p>
         </div>
       </div>
     </footer>

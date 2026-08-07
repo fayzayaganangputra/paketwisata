@@ -10,8 +10,6 @@ const Navbar = () => {
     { name: 'Beranda', path: '/', icon: null },
     { name: 'Paket Wisata', path: '/paket-wisata', icon: <MapPin className="w-4 h-4" /> },
     { name: 'Sewa Mobil', path: '/sewa-mobil', icon: <Car className="w-4 h-4" /> },
-    { name: 'Artikel', path: '/artikel', icon: null },
-    { name: 'Testimoni', path: '/testimoni', icon: null },
     { name: 'Tentang', path: '/tentang', icon: null },
     { name: 'Kontak', path: '/kontak', icon: null },
   ];
@@ -27,7 +25,7 @@ const Navbar = () => {
               <div className="w-8 h-8 bg-gradient-to-r from-amber-400 to-yellow-500 rounded-full flex items-center justify-center">
                 <MapPin className="w-5 h-5 text-white" />
               </div>
-              <span className="text-xl font-bold text-gray-800">Rentalku Yogyakarta</span>
+              <span className="text-xl font-bold text-gray-800">Laju Tuju Yogyakarta</span>
             </Link>
           </div>
 
